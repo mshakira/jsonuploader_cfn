@@ -1,5 +1,8 @@
 # jsonuploader_cfn
-
+- Git link for code: [Jsonuploader](https://github.com/mshakira/jsonuploader)
+- Hosted domain name: www.jsonuploader.com
+- SSL enabled
+ 
 This git repository contains the cloudformation templates for creating infrastructure for [Jsonuploader](https://github.com/mshakira/jsonuploader) web application. The infrastructure diagram is shown below.
 
 ![Infrastructure Diagram](img/Infrastructure.png)
@@ -13,6 +16,7 @@ aws configure --profile <your_profile_name>
 
 ## File Structure
 - The templates dir contains templates for cloudformation.
+  - It includes network, web and jumpbox templates.
 - The parameters dir contains parameters required for spawning infrastructure in each region.
 - The Makefile contains the commands to spawn infrastructure for each region. 
 
@@ -43,4 +47,12 @@ make network-us-west-1 "PROFILE=<your_profile_name>"
 - Launch command
 ```
 make web-us-west-1 "PROFILE=<your_profile_name>"
+```
+### Jumpbox Template
+- Jumpbox template creates jump boxes in each availability zone for debugging purposes. It creates the following.
+  - Instances in each public subnet
+  - Instance security group
+- Launch command
+```
+make jumpbox-us-west-1 "PROFILE=<your_profile_name>"
 ```

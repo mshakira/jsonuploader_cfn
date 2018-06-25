@@ -26,7 +26,7 @@ aws configure --profile <your_profile_name>
   - 2 NAT gateways for private subnets each
   - Internet gateway for VPC
   - Public and private route tables 
-- The parameters can be provided in parameters/network-<region>.json
+- The parameters can be provided in parameters/network-{region}.json
 - Launch command
 ```
 make network-us-west-1 "PROFILE=<your_profile_name>"

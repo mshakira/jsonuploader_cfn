@@ -21,7 +21,7 @@ aws configure --profile <your_profile_name>
 - The Makefile contains the commands to spawn infrastructure for each region. 
 
 ## Deployment Instructions
-- Entire infrastructure is divided into 3 templates.
+- Entire infrastructure is divided into 3 templates. The examples provided below are for region us-west-1. Simillarly we can launch the application in other regions by changing parameters json.
 ### Network Template
 - Network template [network.json](https://github.com/mshakira/jsonuploader_cfn/blob/master/templates/network.json) creates the following.
   - 1 VPC
@@ -56,3 +56,12 @@ make web-us-west-1 "PROFILE=<your_profile_name>"
 ```
 make jumpbox-us-west-1 "PROFILE=<your_profile_name>"
 ```
+
+## Adding New Region to Route 53
+- Certificate has t obe requested for domain jsonuploader.com and *.jsonuploader.com for new region.
+- Once new LB is created in new region, the LB has to be added to the Route 53 hosted zones of `jsonuploader.com`
+  - create a new recordset for the domain `jsonuploader.com`
+  - select 'Type' - A record and 'Alias'
+  - Select the new LB from the dropdown menu
+  - add 'latency' to the routing policy.
+

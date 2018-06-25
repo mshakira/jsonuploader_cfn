@@ -1,0 +1,22 @@
+[
+  {
+    "ParameterKey": "ApplicationName",
+    "ParameterValue": "JsonUploader"
+  }, 
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "us-west-1"
+  },
+  {
+    "ParameterKey": "NetworkStack",
+    "ParameterValue": "network"
+  }, 
+  {
+    "ParameterKey": "PublicSubnet1",
+    "ParameterValue": "PublicSubnet1"
+  }, 
+  {
+    "ParameterKey": "PublicSubnet2",
+    "ParameterValue": "PublicSubnet2"
+  } 
+]

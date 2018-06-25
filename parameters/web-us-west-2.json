@@ -1,0 +1,22 @@
+[
+  {
+    "ParameterKey": "ApplicationName",
+    "ParameterValue": "JsonUploader"
+  }, 
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "us-west-2"
+  },
+  {
+    "ParameterKey": "ArtifactS3Bucket",
+    "ParameterValue": "jsonuploader"
+  },
+  {
+    "ParameterKey": "Certificate",
+    "ParameterValue": "arn:aws:acm:us-west-2:825318642118:certificate/a968ea32-1e4a-4e59-a37a-f6d40fe1565c"
+  },
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "aws_id_rsa_pub"
+  }
+]

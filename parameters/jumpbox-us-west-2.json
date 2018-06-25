@@ -1,0 +1,14 @@
+[
+  {
+    "ParameterKey": "ApplicationName",
+    "ParameterValue": "JsonUploader"
+  }, 
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "us-west-2"
+  },
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "aws_id_rsa_pub"
+  }
+]

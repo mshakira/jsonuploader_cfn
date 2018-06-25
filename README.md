@@ -32,4 +32,15 @@ aws configure --profile <your_profile_name>
 make network-us-west-1 "PROFILE=<your_profile_name>"
 ```
 ### Web Template
-- Web template creates autoscaling group of webservers 
+- Web template creates webservers to serve jsonuploader. It creates the following.
+  - auto scaling group of web servers for 2 subnets in 2 availability zones.
+  - Application load balancer
+  - IAM profile and IAM role
+  - Application security group
+  - Load balancer security group
+  - Load balancer listener
+  - Target group  
+- Launch command
+```
+make web-us-west-1 "PROFILE=<your_profile_name>"
+```

@@ -56,6 +56,7 @@ make web-us-west-1 "PROFILE=<your_profile_name>"
 ```
 make jumpbox-us-west-1 "PROFILE=<your_profile_name>"
 ```
+
 ## Adding New Region to Route 53
 - Certificate has t obe requested for domain jsonuploader.com and *.jsonuploader.com for new region.
 - Once new LB is created in new region, the LB has to be added to the Route 53 hosted zones of `jsonuploader.com`
@@ -63,3 +64,4 @@ make jumpbox-us-west-1 "PROFILE=<your_profile_name>"
   - select 'Type' - A record and 'Alias'
   - Select the new LB from the dropdown menu
   - add 'latency' to the routing policy.
+

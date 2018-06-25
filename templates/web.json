@@ -162,7 +162,7 @@
                                 "yum update -y \n",
                                 "yum install -y aws-cfn-bootstrap \n",
                                 "aws s3 cp --recursive s3://jsonuploader-artifacts/RPMS  . \n",
-                                "sudo yum install -y runit-2.1.2-1.el6.x86_64.rpm jsonuploader-0.0.1-1.x86_64.rpm jsonuploader_runit-0.0.2-1.x86_64.rpm \n",
+                                "sudo yum install -y runit-2.1.2-1.el6.x86_64.rpm jsonuploader-0.0.1-1.x86_64.rpm jsonuploader_runit-0.0.3-1.x86_64.rpm \n",
                                 "/opt/aws/bin/cfn-init -v --region ${AWS::Region} --stack ${AWS::StackName} --resource LaunchConfiguration \n",
                                 "/opt/aws/bin/cfn-signal -e $? ",
                                 " --stack ",

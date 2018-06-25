@@ -23,6 +23,16 @@
             "Type":"String",
             "Default":"t2.micro"
         },
+        "MinInstanceCount":{
+            "Description":"Min instance count",
+            "Type":"Number",
+            "Default":2
+        },
+        "MaxInstanceCount":{
+            "Description":"max instance count",
+            "Type":"Number",
+            "Default":4
+        },
         "InstanceCount":{
             "Description":"How many instances should the AutoScaling Group contain",
             "Type":"Number",
@@ -100,10 +110,10 @@
                     }
                 ],
                 "MinSize":{
-                    "Ref":"InstanceCount"
+                    "Ref":"MinInstanceCount"
                 },
                 "MaxSize":{
-                    "Ref":"InstanceCount"
+                    "Ref":"MaxInstanceCount"
                 },
                 "DesiredCapacity":{
                     "Ref":"InstanceCount"

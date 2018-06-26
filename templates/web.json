@@ -352,6 +352,7 @@
                     }
                 },
                 "Port":8080,
+                "HealthCheckPath":"/status.html",
                 "Protocol":"HTTP"
             }
         }
